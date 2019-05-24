@@ -87,6 +87,11 @@ func UpdatePR(ctx context.Context, pullCtx pull.Context, client *github.Client, 
 				return
 			}
 
+			if pr.GetState() != "APPROVED" {
+				logger.Debug().Msg("Pull request is yet not approved")
+				return
+			}
+
 			comparison, _, err := client.Repositories.CompareCommits(ctx, pullCtx.Owner(), pullCtx.Repo(), baseRef, pr.GetHead().GetSHA())
 			if err != nil {
 				logger.Error().Err(errors.WithStack(err)).Msgf("cannot compare %s and %s for %q", baseRef, pr.GetHead().GetSHA(), pullCtx.Locator())
