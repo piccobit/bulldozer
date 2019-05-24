@@ -19,10 +19,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/stretchr/testify/require"
+	"bulldozer/pull"
+	"bulldozer/pull/pulltest"
 
-	"github.com/palantir/bulldozer/pull"
-	"github.com/palantir/bulldozer/pull/pulltest"
+	"github.com/stretchr/testify/require"
 )
 
 func TestShouldUpdatePR(t *testing.T) {

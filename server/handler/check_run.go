@@ -18,11 +18,11 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/google/go-github/v25/github"
-	"github.com/palantir/go-githubapp/githubapp"
-	"github.com/pkg/errors"
+	"bulldozer/pull"
 
-	"github.com/palantir/bulldozer/pull"
+	"github.com/google/go-github/v25/github"
+	"github.com/piccobit/go-githubapp/githubapp"
+	"github.com/pkg/errors"
 )
 
 type CheckRun struct {

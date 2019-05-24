@@ -18,10 +18,10 @@ import (
 	"context"
 	"strings"
 
+	"bulldozer/pull"
+
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
-
-	"github.com/palantir/bulldozer/pull"
 )
 
 // IsPRBlacklisted returns true if the PR is identified as blacklisted,

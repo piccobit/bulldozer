@@ -17,7 +17,7 @@ package pulltest
 import (
 	"context"
 
-	"github.com/palantir/bulldozer/pull"
+	"bulldozer/pull"
 )
 
 // MockPullContext is a dummy Context implementation.

@@ -17,13 +17,13 @@ package handler
 import (
 	"context"
 
+	"bulldozer/bulldozer"
+	"bulldozer/pull"
+
 	"github.com/google/go-github/v25/github"
-	"github.com/palantir/go-githubapp/githubapp"
+	"github.com/piccobit/go-githubapp/githubapp"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
-
-	"github.com/palantir/bulldozer/bulldozer"
-	"github.com/palantir/bulldozer/pull"
 )
 
 type Base struct {

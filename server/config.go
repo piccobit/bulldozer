@@ -15,13 +15,13 @@
 package server
 
 import (
+	"bulldozer/bulldozer"
+
 	"github.com/palantir/go-baseapp/baseapp"
 	"github.com/palantir/go-baseapp/baseapp/datadog"
-	"github.com/palantir/go-githubapp/githubapp"
+	"github.com/piccobit/go-githubapp/githubapp"
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v2"
-
-	"github.com/palantir/bulldozer/bulldozer"
 )
 
 const (

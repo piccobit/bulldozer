@@ -17,16 +17,16 @@ package server
 import (
 	"fmt"
 
+	"bulldozer/bulldozer"
+	"bulldozer/server/handler"
+	"bulldozer/version"
+
 	"github.com/palantir/go-baseapp/baseapp"
 	"github.com/palantir/go-baseapp/baseapp/datadog"
-	"github.com/palantir/go-githubapp/githubapp"
+	"github.com/piccobit/go-githubapp/githubapp"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	"goji.io/pat"
-
-	"github.com/palantir/bulldozer/bulldozer"
-	"github.com/palantir/bulldozer/server/handler"
-	"github.com/palantir/bulldozer/version"
 )
 
 type Server struct {

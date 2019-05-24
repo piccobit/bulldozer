@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/palantir/bulldozer/pull"
+	"bulldozer/pull"
 )
 
 type Signals struct {
