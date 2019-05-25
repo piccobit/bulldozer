@@ -87,8 +87,8 @@ func UpdatePR(ctx context.Context, pullCtx pull.Context, client *github.Client, 
 				return
 			}
 
-			if pr.GetState() != "APPROVED" {
-				logger.Debug().Msg("Pull request is yet not approved")
+			if updateConfig.UpdateOnlyIfApproved && (pr.GetState() != "APPROVED") {
+				logger.Debug().Msg("Pull request not approved")
 				return
 			}
 

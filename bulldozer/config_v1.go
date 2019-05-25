@@ -61,6 +61,8 @@ type SquashOptions struct {
 type UpdateConfig struct {
 	Whitelist Signals `yaml:"whitelist"`
 	Blacklist Signals `yaml:"blacklist"`
+
+	UpdateOnlyIfApproved bool `yaml:"update_only_if_approved,omitempty"`
 }
 
 type Config struct {
