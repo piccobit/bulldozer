@@ -62,7 +62,7 @@ func ShouldUpdatePR(ctx context.Context, pullCtx pull.Context, updateConfig Upda
 func UpdatePR(ctx context.Context, pullCtx pull.Context, client *github.Client, updateConfig UpdateConfig, baseRef string) error {
 	logger := zerolog.Ctx(ctx)
 
-	//todo: should the updateConfig struct provide any other details here?
+	// TODO: should the updateConfig struct provide any other details here?
 
 	go func(ctx context.Context, baseRef string) {
 		ticker := time.NewTicker(2 * time.Second)
